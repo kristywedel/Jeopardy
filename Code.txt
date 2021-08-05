@@ -1,0 +1,27 @@
+DateTable = CALENDARAUTO()
+
+DateTable = 
+VAR MinDate = MIN(JEOPARDY_QUESTIONS1[air_date])
+VAR MaxDate = MAX(JEOPARDY_QUESTIONS1[air_date])
+RETURN
+ADDCOLUMNS(
+CALENDAR(MinDate, MaxDate),
+"Year", YEAR([Date]),
+"Month Name", FORMAT([Date], "mmmm"),
+"Month Number", MONTH([Date])
+)
+
+Measures:
+SumValue = Sum(JEOPARDY_QUESTIONS1[value])
+CountCategory = COUNT(JEOPARDY_QUESTIONS1[category])
+CountValue = COUNT(JEOPARDY_QUESTIONS1[value])
+CountQuestion = COUNT(JEOPARDY_QUESTIONS1[question])
+
+SummaryTable = SUMMARIZE(JEOPARDY_QUESTIONS1,JEOPARDY_QUESTIONS1[air_date], "NumQuestions", [CountQuestion])
+
+CountNumQuestions = Count(SummaryTable[NumQuestions])
+
+Jeopardy colors
+#010A78
+#c7984b
+#cecfda

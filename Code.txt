@@ -21,6 +21,17 @@ SummaryTable = SUMMARIZE(JEOPARDY_QUESTIONS1,JEOPARDY_QUESTIONS1[air_date], "Num
 
 CountNumQuestions = Count(SummaryTable[NumQuestions])
 
+SelectedMeasure = 
+IF(
+HASONEVALUE(SwitchTable[Measures]),
+SWITCH(
+VALUES(SwitchTable[Measures]),
+"SumValue", [SumValue],
+"CountQuestion", [CountQuestion]
+),
+[SumValue]
+)
+
 Jeopardy colors
 #010A78
 #c7984b

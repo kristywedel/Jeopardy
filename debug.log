@@ -11,3 +11,6 @@
 [0807/102258.027:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\wedelkx\AppData\Local\Power BI Desktop\User Data\Crashpad\attachments\89f5f0fc-3299-4249-a234-612ae2ffaeee: The system cannot find the path specified. (0x3)
 [0807/102258.032:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\wedelkx\AppData\Local\Power BI Desktop\User Data\Crashpad\attachments\c2e4b8a7-3066-4a7c-9b23-6e5b9b736433: The system cannot find the path specified. (0x3)
 [0807/102258.037:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\wedelkx\AppData\Local\Power BI Desktop\User Data\Crashpad\attachments\39ff689c-1056-4c71-9ca5-d3393c347118: The system cannot find the path specified. (0x3)
+[0809/080857.798:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0809/165159.630:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0809/195704.383:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class. (0xc0000004)

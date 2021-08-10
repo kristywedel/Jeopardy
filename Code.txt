@@ -1,3 +1,6 @@
+Link to Files: https://github.com/kristywedel/Jeopardy
+Power BI: https://powerbi.microsoft.com/en-us/downloads/
+
 DateTable = CALENDARAUTO()
 
 DateTable = 
